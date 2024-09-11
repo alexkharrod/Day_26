@@ -6,9 +6,8 @@ new_dict = {row.letter:row.code for (index, row) in df.iterrows()}
 
 
 name = input("Enter a name: ").upper()
+word = [new_dict[letter] for letter  in name]
 
-for i in range(len(name)):
-    phonetic = new_dict[name[i]]
-    alphabet_name.append(phonetic)
 
-print(alphabet_name)
+
+print(word)
